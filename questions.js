@@ -2,46 +2,46 @@ const questions = [
     {
         question: "What is your favorite style of pizza?"
         answers: {
-            a: "New York"
-            b: "Chicago Deep Dish"
-            c: "DiGiorno"
-            d: "Flatbread" 
+            a: "New York" <img src="ny-style-pizza.jpg">
+            b: "Chicago Deep Dish" <img src="chicagodeepdish.jpg">
+            c: "DiGiorno" <img src="digiornopizza.jpg">
+            d: "Flatbread" <img src="flatbreadpizza.jpg">
         }
     },
     {
         question: "What is your favorite type of cloud?"
         answers: {
-            a: "Cumulonimbus"
-            b: "Cirrus"
-            c: "Noctilucent"
-            d: "Cumulus"
+            a: "Cumulonimbus" <img src="cumulonimbusclouds.jpg">
+            b: "Cirrus" <img src="cirrusclouds.jpg">
+            c: "Noctilucent" <img src="noctilucentclouds.jpeg">
+            d: "Cumulus" <img src="cumulusclouds">
         }
     },
     {
         question: "My favorite sport is:"
         answers: {
-            a: "Baseball"
-            b: "Football"
-            c: "Hooray, Sportsball?"
-            d: "Badminton"
+            a: "Baseball" <img src="baseball.jpeg">
+            b: "Football" <img src="footballimage.jpg">
+            c: "Hooray, Sportsball?" <img src="yay-sports-ball-teeturtle_800x.jpg">
+            d: "Badminton" <img src="badmintonimage.jpeg">
         }
     },
     {
         question: "What feeling is most prevalent during Momentum?"
         answers: {
-            a: "Lost"
-            b: "Despair"
-            c: "Frustration"
-            d: "I'm glad I get to do CSS today!"
+            a: "Lost" <img src="lost-image.jpeg">
+            b: "Despair" <img src="despairToyStory.jpg">
+            c: "Frustration" <img src="frustration.png">
+            d: "I'm glad I get to do CSS today!" <img src="images.jpeg">
         }
     },
     {
         question: "What breed of dog do you prefer?"
         answers: {
-            a: "Pupper"
-            b: "Doggo"
-            c: "Smol Cloud"
-            d: "Floofer"
+            a: "Pupper" <img src="pupper.jpeg">
+            b: "Doggo" <img src="doggo.jpg">
+            c: "Smol Cloud" <img src="smolcloud2.jpeg">
+            d: "Floofer" <img src="floofer.jpg">
         }
     },
     {
