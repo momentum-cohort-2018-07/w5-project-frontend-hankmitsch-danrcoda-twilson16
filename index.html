@@ -6,15 +6,46 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <script src="functions.js" defer></script>
-    <script src="questions.js" defer></script>
+    <script src="lodash.js" defer></script>  
+    <!-- <script src="questions.js" defer></script> -->
 </head>
 <body>
     <div id="container">
         <h1>Which Saladelia Menu Item Are You?</h1>
-        <img src="#">
     </div>
-    <button type="submit"></button>
+    <form class="question one">
+        <div id="question-one" class="question">
+        <h4>Question: What is your favorite style of pizza?</h4>
+          <input name="a1" type="radio" value="1">New York</input>
+          <input name="a1" type="radio" value="2">Chicago Deep Dish</input>
+          <input name="a1" type="radio" value="3">DiGiorno</input>
+          <input name="a1" type="radio" value="4">Flatbread</input>
+        </div>
+        <button id="submit1">Select Value</button>
+    </form>
+    <form class="question two">
+        <div id="question-two" class="question">
+        <h4>Question: What is your favorite type of cloud?</h4>
+          <input name="a2" type="radio" value="1">Cumulonimbus</input>
+          <input name="a2" type="radio" value="2">Cirrus</input>
+          <input name="a2" type="radio" value="3">Noctilucent</input>
+          <input name="a2" type="radio" value="4">Cumulus</input>
+        </div>
+        <button id="submit2">Select Value</button>
+    </form>
+    <form class="question three">
+        <div id="question-three" class="question">
+        <h4>My favorite sport is:</h4>
+          <input name="a3" type="radio" value="1">Baseball</input>
+          <input name="a3" type="radio" value="2">Football</input>
+          <input name="a3" type="radio" value="3">Hooray, Sportsball?</input>
+          <input name="a3" type="radio" value="4">Badminton</input>
+        </div>
+        <button id="submit3">Select Value</button>
+    </form>
+    
 </body>
+<button id="final">So Which Food Item Are You?</button>
 </html>
 
 <!-- <form class="complete-form">
