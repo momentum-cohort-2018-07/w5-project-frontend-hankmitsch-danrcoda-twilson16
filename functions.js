@@ -1,34 +1,36 @@
-function buildQuiz () {
-    const output = [];
-
-questions.forEach ((currentQuestion, questionNumber) => 
-    const answers = []
-    for (letter in currentQuestion.answers) {
-        answers.push(
-        `
-        <label>
-        <input type="radio" name="answer${questionNumber}" id="answer${questionNumber}" value="${letter}">${letter}: ${currentQuestion.answers[letter]}
-        </label>
-        `
-        )
-    }
-    output.push(
-        `
-        <div class="question"> ${currentQuestion.question} </div>
-        <div class="answers"> ${answers.join('')} </div>
-        `
-    )
-)
-}
-console.log('hello')
-
 let answersArr = []
-let choice = document.getElementById('submit')
-choice.addEventListener('click', function () {
-  let answer1 = document.querySelector('input[name="q1"]:checked').value
+let choice1 = document.getElementById('submit1')
+choice1.addEventListener('click', function (e) {
+  e.preventDefault()
+  let answer1 = document.querySelector('input[name="a1"]:checked').value
   answersArr.push(answer1)
-  let answer2 = document.querySelector('input[name="q2"]:checked').value
+  console.log(answersArr)
+})
+
+let choice2 = document.getElementById('submit2')
+choice2.addEventListener('click', function (e) {
+  e.preventDefault()
+  let answer2 = document.querySelector('input[name="a2"]:checked').value
   answersArr.push(answer2)
   console.log(answersArr)
-  // console.log(_.sum(answersArr))
 })
+
+let choice3 = document.getElementById('submit3')
+choice3.addEventListener('click', function (e) {
+  e.preventDefault()
+  let answer3 = document.querySelector('input[name="a3"]:checked').value
+  answersArr.push(answer3)
+  console.log(answersArr)
+})
+
+let final = document.getElementById('final')
+final.addEventListener('click', function (e) {
+  e.preventDefault()
+  myFunction()
+})
+function getSum (total, num) {
+  return total + num
+}
+function myFunction (item) {
+  console.log(answersArr.reduce(getSum))
+}
