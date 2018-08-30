@@ -88,5 +88,8 @@ const questions = [
             c: "answer 3"
             d: "answer 4"
         }
-    },
+},
 ] 
+for (var i = 0; i < questions.length; i++) {
+    document.write("<br>"+canvas[i]);
+}
