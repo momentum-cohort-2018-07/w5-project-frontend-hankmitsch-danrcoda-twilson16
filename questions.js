@@ -5,7 +5,7 @@ const questions = [
             a: "New York"
             b: "Chicago Deep Dish"
             c: "DiGiorno"
-            d: "Flatbread" 
+            d: "Flatbread"
         }
     },
     {
@@ -91,5 +91,5 @@ const questions = [
 },
 ] 
 for (var i = 0; i < questions.length; i++) {
-    document.write("<br>"+canvas[i]);
+    document.write("<br>"+questions[i]);
 }
