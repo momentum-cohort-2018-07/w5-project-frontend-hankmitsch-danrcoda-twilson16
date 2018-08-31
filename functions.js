@@ -98,12 +98,35 @@ choice10.addEventListener('click', function (e) {
   answersArr.push(answer10)
   console.log(answersArr)
   document.getElementById('question-ten').style.display = 'none'
-  document.getElementById('question-two').style.display = 'block'
+  document.getElementById('results-page').style.display = 'block'
 })
 
+function decide (x) {
+  if (x <= 15) {
+    return '$3 Fudge Nut Brownie'
+  } else if (x <= 20) {
+    return '$5 Coffee Drink'
+  } else if (x <= 25) {
+    return '$6 Kombucha'
+  } else if (x <= 30) {
+    return '$7 Greek Chicken Wrap'
+  } else if (x <= 35) {
+    return '$8 Reuben'
+  } else {
+    return '$9 Quadripod'
+  }
+}
 let final = document.getElementById('submit10')
 final.addEventListener('click', function (e) {
   e.preventDefault()
   const sum = answersArr.reduce((total, amount) => total + amount)
   console.log(sum)
+  let yourResult = document.createElement('h2')
+  yourResult.innerText = decide(sum)
+  document.getElementById('results-title').appendChild(yourResult)
+})
+
+let reset = document.getElementById('reload')
+reset.addEventListener('click', function () {
+  window.reload()
 })
