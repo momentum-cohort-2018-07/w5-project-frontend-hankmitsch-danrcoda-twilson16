@@ -1,6 +1,5 @@
 import './styles.css'
 
-
 let answersArr = []
 let choice1 = document.getElementById('submit1')
 choice1.addEventListener('click', function (e) {
@@ -88,3 +87,4 @@ final.addEventListener('click', function (e) {
   const sum = answersArr.reduce((total, amount) => total + amount)
   console.log(sum)
 })
+

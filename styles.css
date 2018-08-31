@@ -12,8 +12,10 @@ img {
     width: 40%;
     display: inline-block;
     border: 1px solid black;
+    height: 200px;
 }
 
 answer:hover {
     background-color: blue;
 }
+
