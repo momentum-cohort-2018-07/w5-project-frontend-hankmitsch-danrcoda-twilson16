@@ -101,7 +101,7 @@ choice10.addEventListener('click', function (e) {
   document.getElementById('question-two').style.display = 'block'
 })
 
-let final = document.getElementById('final')
+let final = document.getElementById('submit10')
 final.addEventListener('click', function (e) {
   e.preventDefault()
   const sum = answersArr.reduce((total, amount) => total + amount)
