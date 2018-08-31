@@ -5,10 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" conten t="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Quiz: What Saladelia Menu Item Are You?</title>
   <script src="functions.js" defer></script>
-  <!-- <script src="lodash.js" defer></script>   -->
   <script src="questions.js" defer></script>
+  <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
 <body>
@@ -18,125 +18,103 @@
   <form class="question one">
     <div id="question-one" class="question">
       <h4>Question: What is your favorite style of pizza?</h4>
-      <input name="a1" type="radio" value="1" id="question1">New York <img src="ny-style-pizza.jpg"></input>
-      <input name="a1" type="radio" value="2">Chicago Deep Dish <img src="chicagodeepdish.jpg"></input>
-      <input name="a1" type="radio" value="3">DiGiorno <img src="digiornopizza.jpeg"></input>
-      <input name="a1" type="radio" value="4">Flatbread <img src="fladbreadpizza.jpg"></input>
+      <input name="a1" type="radio" value="1" id="q1a" class="answer"> <label for="q1a">New York <img src="ny-style-pizza.jpg"></label>
+      <input name="a1" type="radio" value="2" id="q1b" class="answer"> <label for="q1b">Chicago Deep Dish <img src="chicagodeepdish.jpg"></label>
+      <input name="a1" type="radio" value="3" id="q1c" class="answer"> <label for="q1c">DiGiorno <img src="digiornopizza.jpeg"></label>
+      <input name="a1" type="radio" value="4" id="q1d" class="answer"> <label for="q1d">Flatbread <img src="fladbreadpizza.jpg"></label>
     </div>
     <button id="submit1">Next Question</button>
   </form>
   <form class="question two">
     <div id="question-two" class="question">
       <h4>Question: What is your favorite type of cloud?</h4>
-      <input name="a2" type="radio" value="1">Cumulonimbus <img src="cumulonimbusclouds.jpg"></input>
-      <input name="a2" type="radio" value="2">Cirrus <img src="cirrusclouds.jpg"></input>
-      <input name="a2" type="radio" value="3">Noctilucent <img src="noctilucentclouds.jpeg"></input>
-      <input name="a2" type="radio" value="4">Cumulus <img src="cumulusclouds.jpg"></input>
+      <input name="a2" type="radio" value="2" id="q2a" class="answer"> <label for="q2a">Cumulonimbus <img src="cumulonimbusclouds.jpg"></label>
+      <input name="a2" type="radio" value="3" id="q2b" class="answer"> <label for="q2b">Cirrus <img src="cirrusclouds.jpg"></label>
+      <input name="a2" type="radio" value="4" id="q2c" class="answer"> <label for="q2c">Noctilucent <img src="noctilucentclouds.jpeg"></label>
+      <input name="a2" type="radio" value="1" id="q2d" class="answer"> <label for="q2d">Cumulus <img src="cumulusclouds.jpg"></label>
     </div>
     <button id="submit2">Next Question</button>
   </form>
   <form class="question three">
     <div id="question-three" class="question">
       <h4>My favorite sport is:</h4>
-      <input name="a3" type="radio" value="1">Baseball <img src="baseballimg.jpeg"></input>
-      <input name="a3" type="radio" value="2">Football <img src="footballimage.jpg"></input>
-      <input name="a3" type="radio" value="3">Hooray, Sportsball? <img src="yay-sports-ball-teeturtle_800x.jpg"></input>
-      <input name="a3" type="radio" value="4">Badminton <img src="badmintonimage.jpeg"></input>
+      <input name="a3" type="radio" value="3" id="q3a" class="answer"> <label for="q3a">Baseball <img src="baseballimg.jpeg"></label>
+      <input name="a3" type="radio" value="4" id="q3b" class="answer"> <label for="q3b">Football <img src="footballimage.jpg"></label>
+      <input name="a3" type="radio" value="1" id="q3c" class="answer"> <label for="q3c">Hooray, Sportsball? <img src="yay-sports-ball-teeturtle_800x.jpg"></label>
+      <input name="a3" type="radio" value="2" id="q3d" class="answer"> <label for="q3d">Badminton <img src="badmintonimage.jpeg"></label>
     </div>
     <button id="submit3">Next Question</button>
   </form>
   <form class="question four">
     <div id="question-four" class="question">
       <h4>Question: What feeling is most prevalent during Momentum?</h4>
-      <input name="a4" type="radio" value="1"> <label for radio>Lost <img src="lost-image.jpeg"></label> </input>
-      <input name="a4" type="radio" value="2">Despair <img src="despairToyStory.jpg"></input>
-      <input name="a4" type="radio" value="3">Frustration <img src="frustration.png"></input>
-      <input name="a4" type="radio" value="4">I'm glad I get to do CSS today! <img src="images.jpeg"></input>
+      <input name="a4" type="radio" value="4" id="q4a" class="answer"> <label for="q4a">Lost <img src="lost-image.jpeg"></label> 
+      <input name="a4" type="radio" value="3" id="q4b" class="answer"> <label for="q4b">Despair <img src="despairToyStory.jpg"></label>
+      <input name="a4" type="radio" value="2" id="q4c" class="answer"> <label for="q4c">Frustration <img src="frustration.png"></label>
+      <input name="a4" type="radio" value="1" id="q4d" class="answer"> <label for="q4d">I'm glad I get to do CSS today! <img src="images.jpeg"></label>
     </div>
     <button id="submit4">Next Question</button>
   </form>
   <form class="question five">
     <div id="question-five" class="question">
       <h4>Question: What breed of dog do you prefer?</h4>
-      <input name="a5" type="radio" value="1">Pupper <img src="pupper.jpeg"></input>
-      <input name="a5" type="radio" value="2">Doggo <img src="doggo.jpg"></input>
-      <input name="a5" type="radio" value="3">Smol Cloud <img src="smolcloud2.jpeg"></input>
-      <input name="a5" type="radio" value="4">Floofer<img src="floofer.jpg"></input>
+      <input name="a5" type="radio" value="1" id="q5a" class="answer"> <label for="q5a">Pupper <img src="pupper.jpeg"></label>
+      <input name="a5" type="radio" value="3" id="q5b" class="answer"> <label for="q5b">Doggo <img src="doggo.jpg"></label>
+      <input name="a5" type="radio" value="2" id="q5c" class="answer"> <label for="q5c">Smol Cloud <img src="smolcloud2.jpeg"></label>
+      <input name="a5" type="radio" value="4" id="a5d" class="answer"> <label for="q5d">Floofer<img src="floofer.jpg"></label>
     </div>
     <button id="submit5">Next Question</button>
   </form>
   <form class=“question six”>
-    <div id=“question-six” class=“question”>
+    <div id=“question-six” class="question">
       <h4>Question: What is your favorite 90's sitcom?</h4>
-      <input name=“a6” type=“radio” value="1">Boy Meets World <img src="boymeetsworld.jpeg”></input>
-      <input name=“a6” type=“radio” value="2">Seinfeld <img src="seinfeld.jpeg”></input>
-      <input name=“a6” type=“radio” value="3">The Fresh Prince of Bel-Air <img src=“Freshprince.jpg”></input>
-      <input name=“a6” type=“radio” value="4">Friends <img src=“friends.jpeg”> </input>
+      <input name=“a6” type=“radio” value="1" id="q6a" class="answer"> <label for="q6a">Boy Meets World <img src="boymeetsworld.jpeg"> </label>
+      <input name="a6" type="radio" value="2" id="q6b" class="answer"> <label for="q6b">Seinfeld <img src="seinfeld.jpeg"></label>
+      <input name="a6" type="radio" value="3" id="q6c" class="answer"> <label for="q6c">The Fresh Prince of Bel-Air <img src="Freshprince.jpg"></label>
+      <input name="a6" type="radio" value="4" id="q6d" class="answer"> <label for="q6d">Friends <img src=“friends.jpeg”> </label>
     </div>
     <button id=“submit6”>Next Question</button>
   </form>
   <form class="question seven">
     <div id="question-seven" class="question">
       <h4>Question: My preference is to live at the: </h4>
-      <input name="a7" type="radio" value="1">Beach <img src="beach.jpeg"></input>
-      <input name="a7" type="radio" value="2">Mountains <img src="mountains.jpeg"></input>
-      <input name="a7" type="radio" value="3">City <img src="city.jpeg"></input>
-      <input name="a7" type="radio" value="4">On a boat <img src="boat.jpeg"></input>
+      <input name="a7" type="radio" value="1" id="q7a" class="answer"> <label for="q7a">Beach <img src="beach.jpeg"></label>
+      <input name="a7" type="radio" value="2" id="q7b" class="answer"> <label for="q7b">Mountains <img src="mountains.jpeg"></label>
+      <input name="a7" type="radio" value="3" id="q7c" class="answer"> <label for="q7c">City <img src="city.jpeg"></label>
+      <input name="a7" type="radio" value="4" id="q7d" class="answer"> <label for="q7d">On a boat <img src="boat.jpeg"></label>
     </div>
     <button id="submit7">Next Question</button>
   </form>
   <form class="question eight">
     <div id="question-eight" class="question">
       <h4>Question: What is your favorite go-to lunch?</h4>
-      <input name="a8" type="radio" value="1">Salad <img src="salad.jpeg"></input>
-      <input name="a8" type="radio" value="2">Wrap <img src="wrap.jpeg"></input>
-      <input name="a8" type="radio" value="3">I run on coffee <img src="coffee.jpeg"></input>
-      <input name="a8" type="radio" value="4">Anything that puts me in a food coma <img src="foodcoma.jpeg"></input>
+      <input name="a8" type="radio" value="1" id="q8a" class="answer"> <label for="q8a">Salad <img src="salad.jpeg"></label>
+      <input name="a8" type="radio" value="2" id="q8b" class="answer"> <label for="q8b">Wrap <img src="wrap.jpeg"></label>
+      <input name="a8" type="radio" value="3" id="q8c" class="answer"> <label for="q8c">I run on coffee <img src="coffee.jpeg"></label>
+      <input name="a8" type="radio" value="4" id="q8d" class="answer"> <label for="q8d">Anything that puts me in a food coma <img src="foodcoma.jpeg"></label>
     </div>
     <button id="submit8">Next Question</button>
   </form>
   <form class="question nine">
     <div id="question-nine" class="question">
       <h4>Question: What is your favorite fantasy series?</h4>
-      <input name="a9" type="radio" value="1">Star Wars <img src="starwars.png"></input>
-      <input name="a9" type="radio" value="2">Harry Potter <img src="harrypotter.jpeg"></input>
-      <input name="a9" type="radio" value="3">Lord of the Rings <img src="lordofrings.jpeg"></input>
-      <input name="a9" type="radio" value="4">Star Trek <img src="startrek.jpg"></input>
+      <input name="a9" type="radio" value="1" id="q9a" class="answer"> <label for="q9a">Star Wars <img src="starwars.png"></label>
+      <input name="a9" type="radio" value="2" id="q9b" class="answer"> <label for="q9b">Harry Potter <img src="harrypotter.jpeg"></label>
+      <input name="a9" type="radio" value="3" id="q9c" class="answer"> <label for="q9c">Lord of the Rings <img src="lordofrings.jpeg"></label>
+      <input name="a9" type="radio" value="4" id="q9d" class="answer"> <label for="q9d">Star Trek <img src="startrek.jpg"></label>
     </div>
     <button id="submit9">Next Question</button>
   </form>
   <form class="question ten">
     <div id="question-ten" class="question">
       <h4>Question: How do you eat your steak?</h4>
-      <input name="a10" type="radio" value="1">Well done <img src="steakwell.jpeg"></input>
-      <input name="a10" type="radio" value="2">Medium <img src="medium-rare-steak.jpg"></input>
-      <input name="a10" type="radio" value="3">Mooing <img src="raresteak.jpeg"></input>
-      <input name="a10" type="radio" value="4">I don't <img src="veggies.jpg"> </input>
+      <input name="a10" type="radio" value="1" id="q10a" class="answer"> <label for="q10a">Well done <img src="steakwell.jpeg"></label>
+      <input name="a10" type="radio" value="2" id="q10b" class="answer"> <label for="q10b">Medium <img src="medium-rare-steak.jpg"></label>
+      <input name="a10" type="radio" value="3" id="q10c" class="answer"> <label for="q10c">Mooing <img src="raresteak.jpeg"></label>
+      <input name="a10" type="radio" value="4" id="q10d" class="answer"> <label for="q10d">I don't <img src="veggies.jpg"></label>
     </div>
-    <button id="final">So Which Food Item Are You?</button>
+    <button id="submit10">So Which Food Item Are You?</button>
   </form>
 </body>
 
 </html>
-
-<!-- <form class="complete-form">
-    <form class="question one">
-      <h3>Pick a value</h4>
-      <div id="question-one">
-        <input name="q1" type="radio" value="1">1</input>
-        <input name="q1" type="radio" value="2">2</input>
-        <input name="q1" type="radio" value="3">3</input>
-        <input name="q1" type="radio" value="4">4</input>
-      </div>
-    </form>
-    <form class="question two">
-      <h3>Pick another value</h4>
-        <input name="q2" type="radio" value="1">1</input>
-        <input name="q2" type="radio" value="2">2</input>
-        <input name="q2" type="radio" value="3">3</input>
-        <input name="q2" type="radio" value="4">4</input>
-    </form>
-    <button id="submit">Select Value</button>
-  </form>  
-</body>
-</html> -->
