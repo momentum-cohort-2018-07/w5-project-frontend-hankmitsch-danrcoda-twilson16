@@ -107,3 +107,4 @@ final.addEventListener('click', function (e) {
   const sum = answersArr.reduce((total, amount) => total + amount)
   console.log(sum)
 })
+
