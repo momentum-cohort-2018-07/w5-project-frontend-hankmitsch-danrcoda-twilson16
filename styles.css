@@ -1,0 +1,19 @@
+body, .container {
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+}
+
+.answer {
+    width: 40%;
+    display: inline-block;
+    border: 1px solid black;
+}
+
+answer:hover {
+    background-color: blue;
+}
