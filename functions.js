@@ -96,14 +96,7 @@ choice10.addEventListener('click', function (e) {
   answersArr.push(answer10)
   console.log(answersArr)
   document.getElementById('question-ten').style.display = 'none'
-})
-
-let final = document.getElementById('submit10')
-final.addEventListener('click', function (e) {
-  e.preventDefault()
-  const sum = answersArr.reduce((total, amount) => total + amount)
-  onsole.log(sum)
-  console.log(result())
+  document.getElementById('results-page').style.display = 'block'
 })
 
 function decide (x) {
@@ -121,3 +114,17 @@ function decide (x) {
     return '$9 Quadripod'
   }
 }
+let final = document.getElementById('submit10')
+final.addEventListener('click', function (e) {
+  e.preventDefault()
+  const sum = answersArr.reduce((total, amount) => total + amount)
+  console.log(sum)
+  let yourResult = document.createElement('h2')
+  yourResult.innerText = decide(sum)
+  document.getElementById('results-title').appendChild(yourResult)
+})
+
+let reset = document.getElementById('reload')
+reset.addEventListener('click', function () {
+  window.reload()
+})
