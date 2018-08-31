@@ -1,5 +1,3 @@
-// import './styles.css'
-
 let answersArr = []
 let choice1 = document.getElementById('submit1')
 choice1.addEventListener('click', function (e) {
