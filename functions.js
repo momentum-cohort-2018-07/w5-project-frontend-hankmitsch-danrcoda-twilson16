@@ -99,19 +99,26 @@ choice10.addEventListener('click', function (e) {
   document.getElementById('results-page').style.display = 'block'
 })
 
+let fudge = `<div><h2>$3 Fudge Nut Brownie</h2> </div>`
+let coffee = `<div><h2>$5 Coffee Drink</h2> </div>`
+let kombucha = `<div> <h2>$6 Kombucha</h2> </div>`
+let wrap = `<div><h2>$7 Greek Chicken Wrap</h2></div>`
+let reuben = `<div><h2>$8 Reuben</h2></div>`
+let quad = `<div><h2>$9 Quadripod</h2> </div>`
+
 function decide (x) {
   if (x <= 15) {
-    return '$3 Fudge Nut Brownie'
+    return fudge + `<img src="./pictures/fudgebrownie.jpg">`
   } else if (x <= 20) {
-    return '$5 Coffee Drink'
+    return coffee + `"img src="./pictures/coffeeresult.jpg">`
   } else if (x <= 25) {
-    return '$6 Kombucha'
+    return kombucha + `<img src="./pictures/kombucha.jpg">`
   } else if (x <= 30) {
-    return '$7 Greek Chicken Wrap'
+    return wrap + `<img src="./pictures/greekchickenwrap.jpg">`
   } else if (x <= 35) {
-    return '$8 Reuben'
+    return reuben + `<img src="./pictures/reuben.jpeg"></img>`
   } else {
-    return '$9 Quadripod'
+    return quad + `<img src="./pictures/quad.jpg">`
   }
 }
 let final = document.getElementById('submit10')
@@ -119,8 +126,9 @@ final.addEventListener('click', function (e) {
   e.preventDefault()
   const sum = answersArr.reduce((total, amount) => total + amount)
   console.log(sum)
-  let yourResult = document.createElement('h2')
-  yourResult.innerText = decide(sum)
+  let yourResult = document.createElement('div')
+  yourResult.classList.add('resultOutput')
+  yourResult.innerHTML = decide(sum)
   document.getElementById('results-title').appendChild(yourResult)
 })
 
